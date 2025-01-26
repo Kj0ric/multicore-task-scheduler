@@ -2,10 +2,8 @@
 #define WBQ_H
 
 #include <stdatomic.h>
-// Structs and methods for WorkBalancerQueue, you can use additional structs 
-// and data structures ON TOP OF the ones provided here.
+// Structs and methods for WorkBalancerQueue
 
-// **********************************************************
 //extern volatile atomic_int dynamic_hw, dynamic_lw;
 
 typedef struct WorkBalancerQueue WorkBalancerQueue;
@@ -37,20 +35,14 @@ typedef struct WBQNode {
     WBQNode* prev;
 } WBQNode;
 
-// **********************************************************
-// WorkBalancerQueue API **********************************************************
+// WorkBalancerQueue API
 void submitTask(WorkBalancerQueue* q, Task* _task);
 Task* fetchTask(WorkBalancerQueue* q);
 Task* fetchTaskFromOthers(WorkBalancerQueue* q);
 
-// You can add more methods to Queue API
 void wbqInit(WorkBalancerQueue* q); 
-// **********************************************************
 
-
-// Your simulator threads should call this function to simulate execution. 
-// Don't change the function signature, you can use the provided implementation of 
-// this function. We will use potentially different implementations while testing.
+// Simulator threads should call this function to simulate execution. 
 void executeJob(Task* task, WorkBalancerQueue* my_queue, int my_id );
 
 void* processJobs(void* arg);
