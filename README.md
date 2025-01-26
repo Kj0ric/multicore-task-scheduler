@@ -88,7 +88,7 @@ Key considerations in the design:
 make sim
 
 # Run the simulator with a task file
-./main task1.txt
+./main sample_tasks1.txt
 ```
 
 ## Potential Research Directions
