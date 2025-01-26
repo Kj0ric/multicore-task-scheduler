@@ -12,7 +12,7 @@
 
 Modern computing systems increasingly rely on multi-core processors to enhance computational performance. However, efficiently distributing tasks across multiple cores presents significant challenges in load balancing, synchronization, and maintaining system efficiency.
 
-This simulator addresses these challenges by implementing an advanced task scheduling mechanism that dynamically balances workloads while minimizing performance overhead.
+This simulator addresses these challenges by implementing an advanced task scheduling mechanism that dynamically balances workloads while minimizing performance overhead. Please refer to the [report](/report.pdf) document for more in-depth explanation.
 
 ## Table of Contents
 - [Concurrent Queue Design](#concurrent-queue-design)
